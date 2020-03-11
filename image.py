@@ -79,6 +79,7 @@ def image2file(image, path):
         either color or grayscale. """
     if isgray(image):
         img = gray2color(image)
+        print('here')
     else:
         img = image
     with open(path, 'wb') as f:
